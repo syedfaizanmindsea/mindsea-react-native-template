@@ -1,0 +1,34 @@
+{
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.wordWrap": "on",
+    "eslint.lintTask.enable": true,
+    "i18n-ally.localesPaths": [
+      "src/i18n",
+      "ios/Pods/Flipper-Folly/folly/lang",
+      "ios/Pods/RCT-Folly/folly/lang",
+      "ios/Pods/boost-for-react-native/boost/locale",
+      "ios/Pods/boost-for-react-native/boost/predef/language",
+      "ios/Pods/Headers/Public/Flipper-Folly/folly/lang",
+      "ios/Pods/Headers/Public/RCT-Folly/folly/lang",
+      "ios/Pods/Headers/Private/Flipper-Folly/folly/lang",
+      "ios/Pods/Headers/Private/RCT-Folly/folly/lang"
+    ],
+    "i18n-ally.keystyle": "nested"
+  }
+  
