@@ -1,8 +1,17 @@
-# Mindsea Template
+# Mindsea React Native Template
 
 Use react native rename to call the app to whatever you prefer
 
 - https://github.com/junedomingo/react-native-rename
+
+It implements the following technologies:
+
+- Prettier[https://prettier.io/]
+- TypeScript[https://www.typescriptlang.org/]
+- Eslint[https://eslint.org/]
+- React Native SVG[https://github.com/react-native-svg/react-native-svg]
+- React Navigation[https://reactnavigation.org/]
+- Husky and Lint-Staged[https://github.com/okonet/lint-staged#user-content-installation-and-setup]
 
 ## Setting up React Native
 
@@ -68,7 +77,6 @@ Use react native rename to call the app to whatever you prefer
   - `ESLint`
   - `Prettier`
   - `React Native Tools`
-  - `Jest`
   - `i18n ally`
 
 ### Android Studio
@@ -91,71 +99,3 @@ Android Studio comes with emulators that can be installed via the AVD Manager, a
 - Make sure to run either `npm install` in the project's root directory before running the project. The project dependencies _are not_ committed to the repository, so this step is necessary.
 - For Android, make sure to have set up an emulator with a supported SDK version, using the AVD Manager: https://developer.android.com/studio/run/managing-avds
   - It may also help if you've created a fresh to Android project (it can be empty) to run the emulator before attempting to run the project.
-
-## E2E UI Testing
-
-- We use [Detox](https://github.com/wix/Detox#about) for gray box end-to-end testing.
-- Use their [getting started guide](https://github.com/wix/Detox/blob/master/docs/Introduction.GettingStarted.md#step-1-install-dependencies) to setup your environment.
-- We put e2e tests in /tests/e2e/
-
-## Unit/Integration Testing
-
-- We use [native-testing-library](native-testing-library.com) for unit and integration testing of components
-- We use the [Jest VSCode extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) to automatically run tests as we edit them
-- Read our [guidelines](https://github.com/livebungalow/bungalow-mobile/wiki/Unit-and-integration-testing) for writting tests
-
-### TypeScript
-
-We use TypeScript in 4 different ways, and each way will utilise the same `FormValues` interface, eg.
-
-1. FormValues interface
-
-```
-interface FormValues {
-   paymentAmount: string;
-   name: string;
-   email: string;
-}
-```
-
-Note - even though `paymentAmount` may end up being a numerical value, it is easier to manipulate as a `string` when working with the form
-
-2. Yup Validation
-
-```
-const validationSchema = yup.object().shape<FormValues>({
-...validation here..
-});
-```
-
-3. useForm instantiation
-
-```
-const { dynamic object } = useForm<FormValues>({ static object });
-```
-
-- [Typescript Usage](https://react-hook-form.com/get-started#TypeScript)
-
-### Validation with yup
-
-Yup is a flexible validation library that works well with react-hook-form. As mentioned before, it is preferable to use `string` as opposed to `number` for numerical values. Here's an example
-
-```
-
-  const fieldValidation = yup
-    .string()
-    .max(
-      MAX_FIELD_LENGTH,
-      i18n.t('common_validation_max_length', {
-        length: MAX_FIELD_LENGTH,
-      })
-    )
-    .required(i18n.t('common_validation_required'));
-
-  const validationSchema = yup.object().shape<FormValues>({
-    firstDepositAmount: fieldValidation,
-    secondDepositAmount: fieldValidation,
-  });
-```
-
-- [Yup docs](https://github.com/jquense/yup)
