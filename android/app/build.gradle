@@ -127,7 +127,7 @@ android {
 
     
     defaultConfig {
-        applicationId "com.accountabull"
+        applicationId "com.template"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

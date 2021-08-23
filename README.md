@@ -1,6 +1,8 @@
-# Accountabull
+# Mindsea Template
 
-A social network where people hold each other
+Use react native rename to call the app to whatever you prefer
+
+- https://github.com/junedomingo/react-native-rename
 
 ## Setting up React Native
 
