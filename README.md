@@ -6,13 +6,13 @@ Use react native rename to call the app to whatever you prefer
 
 It implements the following technologies:
 
-- Prettier[https://prettier.io/]
-- TypeScript[https://www.typescriptlang.org/]
-- Eslint[https://eslint.org/]
-- React Native SVG[https://github.com/react-native-svg/react-native-svg]
-- React Navigation[https://reactnavigation.org/]
-- Husky and Lint-Staged[https://github.com/okonet/lint-staged#user-content-installation-and-setup]
-- i18next[https://react.i18next.com/]
+- [Prettier](https://prettier.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Eslint](https://eslint.org/)
+- [React Native SVG](https://github.com/react-native-svg/react-native-svg)
+- [React Navigation](https://reactnavigation.org/)
+- [Husky and Lint-Staged](https://github.com/okonet/lint-staged#user-content-installation-and-setup)
+- [i18next](https://react.i18next.com/)
 
 ## Setting up React Native
 
