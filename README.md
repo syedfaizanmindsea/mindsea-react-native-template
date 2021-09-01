@@ -12,6 +12,7 @@ It implements the following technologies:
 - React Native SVG[https://github.com/react-native-svg/react-native-svg]
 - React Navigation[https://reactnavigation.org/]
 - Husky and Lint-Staged[https://github.com/okonet/lint-staged#user-content-installation-and-setup]
+- i18next[https://react.i18next.com/]
 
 ## Setting up React Native
 
