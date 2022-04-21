@@ -16,7 +16,7 @@
     "i18next": "^20.4.0",
     "react": "17.0.2",
     "react-i18next": "^11.11.4",
-    "react-native": "0.65.1",
+    "react-native": "0.68.1",
     "react-native-localize": "^2.1.1",
     "react-native-safe-area-context": "^3.3.0",
     "react-native-screens": "^3.5.0",
