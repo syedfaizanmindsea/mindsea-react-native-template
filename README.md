@@ -26,11 +26,14 @@ It implements the following technologies:
     - Used to install local **tools** that are needed globally.
     - https://brew.sh
 
-3.  NPM
+3.  NPM or Yarn
 
     - Used to install local **packages** that are needed globally (or locally).
+    - Yarn is fast and efficient compared to npm, but at the end of the day, both serve the same purpose.
     - NPM: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm (best to install NVM prior to NPM).
       - `nvm install --latest-npm`
+    - Yarn: https://yarnpkg.com/ (Yarn comes as a npm package).
+      - `npm install -g yarn`
 
 4.  Node
 
@@ -69,7 +72,13 @@ It implements the following technologies:
 
 ### Command Line usage
 
+#### NPM
+
 - Use `npm run {platform}`, so using `npm run ios` will run the iOS app
+
+#### Yarn
+
+- Use `yarn {platform}`, so using `yarn ios` will run the iOS app
 
 ### VS Code
 
