@@ -42,7 +42,7 @@ workflows:
             - module: app
       - firebase-app-distribution@0:
           inputs:
-            - app: 1:139861413503:android:885e558e4b10a78182f94a
+            - app: '$FIREBASE_ANDROID_APP_ID'
             - release_notes: |-
                 Staging Build
                 Commit:$BITRISE_GIT_COMMIT
@@ -92,7 +92,7 @@ workflows:
             - export_method: ad-hoc
       - firebase-app-distribution@0:
           inputs:
-            - app: 1:139861413503:ios:899caa458253ab4c82f94a
+            - app: '$FIREBASE_IOS_APP_ID'
             - release_notes: |-
                 Staging Build
                 Commit:$BITRISE_GIT_COMMIT
