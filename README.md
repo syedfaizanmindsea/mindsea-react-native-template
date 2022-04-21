@@ -19,6 +19,7 @@ It implements the following technologies:
 1.  NVM
 
     - Used to manage multiple active node versions, good for using across multiple projects.
+    - Install Node version 14 or up.
     - https://github.com/creationix/nvm#installation
 
 2.  Homebrew
@@ -57,9 +58,9 @@ It implements the following technologies:
 
 7.  Java
 
-    - Version 1.7 or higher is needed for Android.
+    - JDK 11 or higher is needed for Android.
     - Check by running `java -version`
-    - Install the latest from here: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+    - Install the latest from internet or run `brew tap homebrew/cask-versions` and then `brew install --cask zulu11`
 
 8.  Git
     - by default git will be case insensitive, which we do not want
