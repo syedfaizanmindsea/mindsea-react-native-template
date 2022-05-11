@@ -5,6 +5,7 @@ import { getLocales } from 'react-native-localize';
 import en from './en.json';
 
 i18n.use(initReactI18next).init({
+  compatibilityJSON: 'v3',
   fallbackLng: 'en',
   lng: getLocales()[0].languageCode,
   debug: false,

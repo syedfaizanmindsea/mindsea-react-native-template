@@ -8,14 +8,14 @@ import { ROUTES } from 'src/navigation/routes';
 import { COLORS } from 'src/themes/colors';
 import { PlusIcon } from 'src/themes/icons';
 
-type WelcomeScreenProps = NativeStackScreenProps<RouteParams, 'Welcome'>;
+type WelcomeScreenProps = NativeStackScreenProps<RouteParams, ROUTES.Welcome>;
 
 export const WelcomeScreen: FC<WelcomeScreenProps> = ({ navigation }) => {
   const { t } = useTranslate();
   return (
     <View>
       <Text>{t('welcome_title')}</Text>
-      <Pressable onPress={() => navigation.navigate(ROUTES.Second)}>
+      <Pressable onPress={() => navigation.navigate(ROUTES.BarcodeScan)}>
         <PlusIcon fill={COLORS.black} width={40} height={40} />
       </Pressable>
     </View>
